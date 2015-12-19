@@ -1,0 +1,38 @@
+{
+  "name": "intro-falcor",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "4.13.3"
+  },
+  "devDependencies": {
+    "babel-cli": "6.3.17",
+    "babel-preset-es2015": "6.3.13",
+    "hjs-webpack": "5.2.0",
+    "nodemon": "1.8.1",
+    "webpack": "1.12.9",
+    "webpack-dev-middleware": "1.4.0",
+    "webpack-dev-server": "1.14.0"
+  },
+  "scripts": {
+    "start": "nodemon --watch server --exec babel-node -- server",
+    "build": "webpack",
+    "yolo": "git add --all && git commit -am \"$(date)\" && npm version minor && git push origin master --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosvillu-com/intro-falcor.git"
+  },
+  "keywords": [],
+  "author": "Carlos Villuendas <carlosvillu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosvillu-com/intro-falcor/issues"
+  },
+  "homepage": "https://github.com/carlosvillu-com/intro-falcor#readme",
+  "babel": {
+    "presets": ["es2015"]
+  }
+}
